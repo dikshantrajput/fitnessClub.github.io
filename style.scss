@@ -61,7 +61,7 @@ html{
         align-items: center;
         background-color: transparentize(white,0.05);
         
-        .fa-times{
+        .cut{
             display: none;
         }
         .burger{
@@ -620,13 +620,16 @@ html{
             background-position: 70%;
             .new{
                 .cut{
+                    display: block;
                     position:absolute;
                     right:5%;
                     top:8%;
-                }
-                .fa-times{
-                    display: block;
-                    font-size:1.9em;
+                    
+                    span{
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size:1.7em;
+                        font-weight: bold;
+                    }
                 }
             }
             

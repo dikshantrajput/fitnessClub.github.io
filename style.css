@@ -84,7 +84,7 @@ html {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-.fullscreen .wrapper nav .fa-times {
+.fullscreen .wrapper nav .cut {
   display: none;
 }
 
@@ -636,13 +636,15 @@ html {
     background-position: 70%;
   }
   .fullscreen .wrapper .new .cut {
+    display: block;
     position: absolute;
     right: 5%;
     top: 8%;
   }
-  .fullscreen .wrapper .new .fa-times {
-    display: block;
-    font-size: 1.9em;
+  .fullscreen .wrapper .new .cut span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
   }
   .fullscreen .wrapper nav {
     -webkit-transition: all 0.5s;
