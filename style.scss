@@ -622,8 +622,11 @@ html{
                 .cut{
                     display: block;
                     position:absolute;
-                    right:5%;
+                    right:3%;
+                    width:40px;
+                    text-align: center;
                     top:8%;
+                    z-index:999999;
                     
                     span{
                         font-family: Verdana, Geneva, Tahoma, sans-serif;
