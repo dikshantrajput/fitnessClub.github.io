@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a3d6105a86.js"></script>
+    <title>template</title>
+</head>
+<body>
+
+    <div class="fullscreen">
+    <div class="wrapper" id="top">
+   
+        <nav>
+            <div class="cut"><i class="fa fa-times"></i></div>
+            <div class="logo"><a href="#">fitnessClub</a></div>
+            <div class="menubar">
+                <ul class="list">
+                    <li class="list-items"><a href="#">about us</a></li>
+                    <li class="list-items"><a href="#">services</a></li>
+                    <li class="list-items"><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <ul class="social-list">
+                    <li class="social-list-items"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="social-list-items"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-list-items"><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="layer1"></div>
+                <div class="layer2"></div>
+                <div class="layer3"></div>
+
+            </div>
+        </nav>
+
+        <div class="top">
+            <a class="topbtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="heading">
+            <span class="head">BRING THE BEST</span><br><span> OUTTA YOU</span>
+        </div>
+
+    </div>
+
+    <div class="section1">
+        <h1>FAMILY SERVICES</h1>
+        <div class="inside-content">
+            <div class="first">
+                <h2>CHILD CARE</h2>
+                <p>We care about our young clients and create a lot of fun for them!</p>
+            </div>
+            <div class="second">
+                <h2>CLASSES FOR KIDS</h2>
+                <p>Children enjoy attending our classes and we see more and more of them coming to us!</p>
+            </div>
+            <div class="third">
+                <h2>PARENTS AND CHILDREN</h2>
+                    <p>We include fun games that require involvement of both children and parents!</p>
+            </div>
+        </div>
+    
+    </div>
+        <div class="section2">
+            <h2>Aerobics Program</h2>
+            <h3>Advanced Level</h3>
+            
+               <div class="fluid-div">
+                   <div class="image-div"></div>
+                   <div class="article1">
+                       <p>
+                        Our accredited individual trainers provide private and expert support so you can achieve your goals in the shortest time achievable. We possess an assortment of packages available to suit your necessities featuring; individualized instruction, partner instruction (two folks to a team) to small team instruction of around six; relying on your inclinations, budget plan and the amount of help as well as help you demand.</p>
+                       </div>
+               </div> 
+        </div>
+
+    
+
+        <div class="section3">
+            <h2>OUR PRICINGS...</h2>
+            <div class="cards">
+                <div class="card card1">
+                    <h3>GOLD CARD</h3>
+                    <h1>$1000</h1>
+                    <p>
+                        Monthly<br>
+                        Access to Fitness Area<br>
+                        Duration: 12 Months
+                    </p>
+
+                    <button class="choose">Choose</button>
+                </div>
+                <div class="card card2">
+                    <h3>FLEXIBLE CARD</h3>
+                    <h1>$2000</h1>
+                    <p>
+                        Monthly<br>
+                        Access to Fitness Area<br>
+                        Duration: 6 Months
+                    </p>
+
+                    <button class="choose">Choose</button>
+                </div>
+                <div class="card card3">
+                    <h3>PLATINUM CARD</h3>
+                    <h1>$3000</h1>
+                    <p>
+                        Monthly<br>
+                        Access to Fitness Area<br>
+                        Duration: 12 Months
+                    </p>
+
+                    <button class="choose">Choose</button>
+                </div>
+            </div>
+
+                <div class="section4">
+                    <h1>Follow Us</h1>
+                    <div class="all-social-icons" >
+                        <span><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
+                        <span><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></span>
+
+
+                        
+                    </div>
+                </div>
+
+        </div>
+</div>
+
+<script>
+    const burger=document.querySelector(".burger")
+    const nav=document.querySelector("nav")
+    const menuBar=document.querySelector(".menubar")
+    const social=document.querySelector(".social-icons")
+    const fullScreen=document.querySelector(".fullscreen")
+    const cut = document.querySelector(".cut")
+
+    menuBar.classList.toggle("none")
+    social.classList.toggle("none")
+    
+    burger.addEventListener("click",function(){
+        burger.classList.toggle("cross")
+        nav.classList.toggle("new")
+        menuBar.classList.toggle("none")
+        social.classList.toggle("none")
+        menuBar.classList.toggle("new-menubar")
+    })
+
+    // cut.addEventListener("click",function(){
+    //     nav.classList.remove("new")
+    //     menuBar.classList.toggle("none")
+    //     social.classList.toggle("none")
+    //     menuBar.classList.toggle("new-menubar")
+    // })
+
+        if(window.matchMedia("(max-width:400px)").matches){
+            
+            burger.addEventListener("click",function(){
+                burger.style.display="none"
+                burger.classList.remove("cross")    
+                nav.classList.add("new")
+                menuBar.classList.add("new-menubar")
+            })
+            cut.addEventListener("click",function(){
+                burger.style.display="block"
+                burger.classList.remove("cross")
+                nav.classList.remove("new")
+                menuBar.classList.toggle("none")
+                social.classList.toggle("none")
+                menuBar.classList.toggle("new-menubar")
+            })
+       }
+
+   const topDiv = document.querySelector(".top")
+   topDiv.addEventListener("click",function(){
+       window.scrollTo(0,0)
+   })
+
+   window.addEventListener("scroll",function(){
+        if(window.scrollY>300){
+            topDiv.style.display="flex"
+           
+        }else{
+            topDiv.style.display="none"
+        }
+   })
+   
+</script>
+
+</body>
+</html>
