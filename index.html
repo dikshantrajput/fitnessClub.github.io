@@ -154,31 +154,23 @@
         social.classList.toggle("none")
         menuBar.classList.toggle("new-menubar")
     })
-
-    // cut.addEventListener("click",function(){
-    //     nav.classList.remove("new")
-    //     menuBar.classList.toggle("none")
-    //     social.classList.toggle("none")
-    //     menuBar.classList.toggle("new-menubar")
-    // })
-
-        if(window.matchMedia("(max-width:400px)").matches){
-            
-            burger.addEventListener("click",function(){
-                burger.style.display="none"
-                burger.classList.remove("cross")    
-                nav.classList.add("new")
-                menuBar.classList.add("new-menubar")
-            })
-            cut.addEventListener("click",function(){
-                burger.style.display="block"
-                burger.classList.remove("cross")
-                nav.classList.remove("new")
-                menuBar.classList.toggle("none")
-                social.classList.toggle("none")
-                menuBar.classList.toggle("new-menubar")
-            })
-       }
+    if(window.matchMedia("(max-width:400px)").matches){
+        
+        burger.addEventListener("click",function(){
+            burger.style.display="none"
+            burger.classList.remove("cross")    
+            nav.classList.add("new")
+            menuBar.classList.add("new-menubar")
+        })
+        cut.addEventListener("click",function(){
+            burger.style.display="block"
+            burger.classList.remove("cross")
+            nav.classList.remove("new")
+            menuBar.classList.toggle("none")
+            social.classList.toggle("none")
+            menuBar.classList.toggle("new-menubar")
+        })
+    }
 
    const topDiv = document.querySelector(".top")
    topDiv.addEventListener("click",function(){
